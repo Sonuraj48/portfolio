@@ -58,11 +58,11 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 dark:from-[#18181b] dark:via-[#23272f] dark:to-[#1e293b]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">Contact Me</h2>
+          <p className="text-xl text-zinc-100 max-w-3xl mx-auto drop-shadow">
             Let's connect and explore opportunities in AI/ML, DevOps, and innovative technology solutions
           </p>
         </div>
@@ -71,7 +71,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="animate-slide-up">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a
@@ -83,8 +83,8 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-gray-600">{info.label}</div>
-                      <div className="text-lg font-semibold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
+                      <div className="text-sm font-medium text-zinc-100">{info.label}</div>
+                      <div className="text-lg font-semibold text-white group-hover:text-blue-200 transition-colors duration-300">
                         {info.value}
                       </div>
                     </div>
@@ -95,8 +95,8 @@ const Contact = () => {
 
             {/* Quick message */}
             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <h4 className="text-lg font-bold text-gray-900 mb-3">Available for Opportunities</h4>
-              <p className="text-gray-700">
+              <h4 className="text-lg font-bold text-white mb-3">Available for Opportunities</h4>
+              <p className="text-zinc-100">
                 I'm actively looking for opportunities in AI/ML engineering, DevOps, and full-stack development. 
                 Open to internships, full-time positions, and collaborative projects.
               </p>
@@ -106,7 +106,7 @@ const Contact = () => {
           {/* Social Links */}
           <div className="space-y-8">
             <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Connect With Me</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {socialLinks.map((social, index) => (
                   <a
@@ -120,8 +120,8 @@ const Contact = () => {
                       {social.icon}
                     </div>
                     <div className="flex-1">
-                      <div className="text-sm font-medium text-gray-600">{social.label}</div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
+                      <div className="text-sm font-medium text-zinc-100">{social.label}</div>
+                      <div className="text-sm font-semibold text-white group-hover:text-blue-200 transition-colors duration-300">
                         @{social.username}
                       </div>
                     </div>
@@ -132,23 +132,23 @@ const Contact = () => {
 
             {/* Professional focus */}
             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <h4 className="text-lg font-bold text-gray-900 mb-3">Professional Focus</h4>
+              <h4 className="text-lg font-bold text-white mb-3">Professional Focus</h4>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700">AI/ML Engineering & Research</span>
+                  <span className="text-zinc-100">AI/ML Engineering & Research</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-700">DevOps & Cloud Infrastructure</span>
+                  <span className="text-zinc-100">DevOps & Cloud Infrastructure</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-700">Full-Stack Development</span>
+                  <span className="text-zinc-100">Full-Stack Development</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">Data Science & Analytics</span>
+                  <span className="text-zinc-100">Data Science & Analytics</span>
                 </div>
               </div>
             </div>

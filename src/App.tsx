@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 import { setupScrollAnimations } from './utils/animations';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <Contact />
         <Resume />
       </main>
+      <Footer />
     </div>
   );
 }
